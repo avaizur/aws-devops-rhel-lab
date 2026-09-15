@@ -5,9 +5,9 @@ resource "aws_iam_role" "ssm" {
     Version = "2012-10-17"
 
     Statement = [{
-      Effect = "Aloow"
+      Effect = "Allow"
 
-      Principapl = {
+      Principal = {
         Service = "ec2.amazonaws.com"
       }
 

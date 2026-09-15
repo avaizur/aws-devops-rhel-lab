@@ -3,7 +3,7 @@ variable "project_name" {
 }
 
 variable "instance_type" {
-  default = "t3.medium"
+  default = "t4g.medium"
 }
 
 variable "disk_size" {
