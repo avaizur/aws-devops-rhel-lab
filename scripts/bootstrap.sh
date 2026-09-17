@@ -43,7 +43,8 @@ wget -q \
 tar -xzf \
   nice-dcv-2025.0-20103-el9-aarch64.tgz
 
-cd nice-dcv-*
+DCV_DIR=$(find /tmp -maxdepth 1 -type d -name 'nice-dcv-*' | head -n 1)
+cd "$DCV_DIR"
 
 dnf install -y \
   ./nice-dcv-server-*.aarch64.rpm \
